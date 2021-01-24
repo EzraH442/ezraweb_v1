@@ -1,0 +1,182 @@
+﻿@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#header a {
+    color: white;
+}
+
+#header {
+    background-color: black;
+}
+
+.navigation-bar {
+    padding: 30px;
+}
+
+    .navigation-bar ul {
+        list-style-type: none;
+    }
+
+.title {
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    font-size: 22px;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.item {
+    padding: 5px 10px 5px 10px;
+}
+
+.top-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .top-navigation li a {
+        display: block;
+        padding: 15px 6px;
+    }
+
+    .top-navigation li .subitem a {
+        order: 1;
+    }
+
+.toggle {
+    order: 1;
+    font-size: 40px;
+}
+
+.item .button {
+    order: 2;
+    padding: 9px 5px;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.submenu {
+    display: none;
+}
+
+.contains-submenu:hover .submenu {
+    display: block;
+    animation: fadein 0.5s;
+}
+
+.top-navigation .subitem a {
+    padding: 8px 0px;
+    background-color: black;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    align-content: center;
+}
+
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media all and (min-width: 700px) {
+    .top-navigation {
+        justify-content: flex-start;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .title {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .logo {
+        margin-right: 30px;
+        width: auto;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+    .top-navigation li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+
+    .button a {
+        background: #0080ff;
+    }
+
+        .button a:hover {
+            text-decoration: none;
+            background: royalblue;
+            border-color: darkblue;
+        }
+}
+
+@media all and (min-width: 960px) {
+    .top-navigation {
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+        .top-navigation .subitem a {
+            padding: 10px 22px;
+        }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .contains-submenu:hover .submenu {
+        position: absolute;
+        left: -5px;
+        top: 68px;
+        z-index: 4;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
