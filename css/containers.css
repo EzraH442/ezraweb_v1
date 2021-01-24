@@ -1,0 +1,58 @@
+﻿:root {
+    --default-color: black;
+    --default-background-color: white;
+
+    --container-toi-text-width: 80%;
+    --container-toi-text-mobile-width: 60%;
+    --container-toi-text-background: rgba(0, 0, 0, 0.4);
+    --container-toi-text-color: white;
+}
+/* 
+    Container (T)ext (o)ver (i)mage
+
+    Unspecified:
+    - font
+    - 'top' value of text'
+*/
+.container-toi {
+    position: relative;
+}
+    .container-toi .text {
+        position: absolute;
+        width: var(--container-toi-text-mobile-width, 80%);
+        background-color: var(--container-toi-text-background);
+        color: var(--container-toi-text-color);
+        padding: 15px 30px;
+    }
+    .container-toi img {
+        width: 100%;
+    }
+@media all and (min-width: 700px) {
+    .container-toi {
+        position: relative;
+    }
+        .container-toi .text {
+            width: var(--container-toi-text-width);
+        }
+}
+
+/*
+    3 column layout
+*/
+
+.columns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+.columns .column {
+    padding: 10px 20px;
+}
+.columns .column img {
+    height: 400px;
+}
+.columns .column p {
+
+}

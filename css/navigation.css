@@ -7,26 +7,19 @@
         opacity: 1;
     }
 }
-
-#header a {
-    color: white;
-}
-
 #header {
     background-color: black;
 }
+    #header a {
+        color: white;
+    }
 
 .navigation-bar {
     padding: 30px;
 }
 
-    .navigation-bar ul {
-        list-style-type: none;
-    }
-
 .title {
     font-family: 'Major Mono Display', monospace;
-    color: white;
     font-size: 22px;
 }
 
@@ -36,7 +29,7 @@
 }
 
 .item {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
 }
 
 .top-navigation {
@@ -55,14 +48,9 @@
         order: 1;
     }
 
-.toggle {
+#toggle {
     order: 1;
     font-size: 40px;
-}
-
-.item .button {
-    order: 2;
-    padding: 9px 5px;
 }
 
 .item {
@@ -80,7 +68,7 @@
     display: none;
 }
 
-.contains-submenu:hover .submenu {
+.submenu-active .submenu {
     display: block;
     animation: fadein 0.5s;
 }
@@ -115,37 +103,16 @@
         flex: 1;
     }
 
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
-
     .logo {
         margin-right: 30px;
         width: auto;
     }
 
-    .toggle {
+    #toggle {
         flex: 1;
         text-align: right;
         order: 2;
     }
-
-    .top-navigation li.button a {
-        padding: 10px 15px;
-        margin: 5px 0;
-    }
-
-    .button a {
-        background: #0080ff;
-    }
-
-        .button a:hover {
-            text-decoration: none;
-            background: royalblue;
-            border-color: darkblue;
-        }
 }
 
 @media all and (min-width: 960px) {
@@ -165,18 +132,14 @@
         width: auto;
     }
 
-    .button {
-        order: 2;
-    }
-
-    .contains-submenu:hover .submenu {
+    .submenu-active .submenu {
         position: absolute;
         left: -5px;
         top: 68px;
         z-index: 4;
     }
 
-    .toggle {
+    #toggle {
         display: none;
     }
 }

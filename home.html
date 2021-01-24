@@ -3,16 +3,20 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>AWS Test</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le1iisaAAAAAGW7-lA_PoCubVTHxxOYBJUoc83X"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <!--  OPTIONAL  -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le1iisaAAAAAGW7-lA_PoCubVTHxxOYBJUoc83X"></script>
+    <link rel="stylesheet" type="text/css" href="css/containers.css">
     <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+
+    <title>Mountain</title>
 </head>
 <body>
     <div id="header">
@@ -21,24 +25,59 @@
                 <li class="logo"><img src="images/icon.png" width="90" height="80" /></li>
                 <li class="title">
                     <a href="home.html">
-                        title <br />
-                        <span class="subtitle"> subtitle </span>
+                        Rocky Mountains <br />
+                        <span class="subtitle"></span>
                     </a>
                 </li>
                 <li class="item"><a href="home.html">Home</a></li>
                 <li class="item contains-submenu">
-                    <a tabindex="0">dropdown text</a>
+                    <a tabindex="0">dropdown text &nbsp &nbsp <i class="fas fa-caret-down toggle-submenu"></i> </a>
                     <ul class="submenu">
                         <li class="subitem"><a href="">link 1</a></li>
                         <li class="subitem"><a href="">link 2</a></li>
                     </ul>
                 </li>
                 <li class="item"><a href="contact.html">Contact</a></li>
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li id="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
     </div>
 
+    <div class="container-toi">
+        <img src="images/home-top.jpg"/>
+        <p class="text">"It is not the mountain we conquer, but ourselves" <br /> - Edmund Hillary</p>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <img src="images/left.jpg" />
+        </div>
+        <div class="column">
+            <img src="images/right.jpg"/>
+        </div>
+        <div class="column">
+            <h1>Backpacking</h1>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <h1>Scrambling</h1>
+            <p>Scrambling in the Rocky Mountains</p>
+        </div>
+        <div class="column">
+            <img src="images/column2.jpg" />
+            <div class="column-text">
+                <p>Scrambles</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/summit.jpg" />
+            <div class="column-text">
+                <p>Summits</p>
+            </div>
+        </div>
+    </div>
 
     <script src="js/navigation.js"></script>
 </body>
