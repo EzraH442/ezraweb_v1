@@ -6,7 +6,6 @@
 }
 /* 
     Container (T)ext (o)ver (i)mage
-
     Unspecified:
     - font
     - 'top' value of text'
@@ -32,11 +31,7 @@
             width: var(--container-toi-text-width);
         }
 }
-
-/*
-    3 column layout
-*/
-
+/*--------------- 3 column layout --------------*/
 .columns {
     display: flex;
     flex-flow: row wrap;
@@ -56,7 +51,6 @@
     }
     .columns .text {
         padding: 20px;
-
         flex: 1 1 300px;
     }
     .columns .column img {
