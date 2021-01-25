@@ -3,12 +3,50 @@
     font-size: 18px;
     font-weight: 300;
 }
-.container-split {
-    margin-top: -5px;
+.columns {
+    color: #86C232;
+    font-family:  'Montserrat', sans-serif;
 }
-
+    .columns .column {
+        min-width: 250px;
+        min-height: 0;
+    }
+    .columns p {
+        margin: 12px 0 40px;
+    }
+    .columns a {
+        background-color: #86C232;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 25px;
+        margin: 20px 0px;
+        transition: background-color 0.5s;
+    }
+    .columns a:hover {
+        background-color: #61892F;
+    }
+    .columns .text {
+        width: 90vw
+    }
+    .columns .last {
+        order: 3;
+    }
+body {
+    background-color: #222629;
+}
 @media all and (min-width: 700px) {
     .container-toi .text {
         font-size: 2.6vw
+    }
+}
+@media all and (min-width: 960px) {
+    .columns .text {
+        width: auto;
+    }
+    .columns .last {
+        order: 0;
+    }
+    .columns {
+        flex-wrap: nowrap;
     }
 }
