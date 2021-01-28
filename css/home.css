@@ -33,7 +33,7 @@ body {
 }
 
 #home-hs {
-    background-color: #6B6E70;
+    background-color: #cfe8a3;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -66,6 +66,7 @@ body {
     }
     #home-hs .columns {
         margin: 10px 20px 50px;
+        color: black;
     }
 
 .post .post-title {

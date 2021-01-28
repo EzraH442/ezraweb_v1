@@ -1,0 +1,13 @@
+﻿body {
+    background-color: #cfe8a3;
+}
+.journal {
+    margin: 50px 10vw;
+}
+.journal p, .journal img {
+    margin: 10px 0;
+}
+    .journal img {
+        object-fit: cover;
+        width: 100%;
+    }
