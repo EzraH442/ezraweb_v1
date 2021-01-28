@@ -44,6 +44,9 @@ h2 {
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: 0 0 10px #000000;
 }
+.captcha-private-policy {
+    margin-bottom: 14px; 
+}
 @media all and (min-width: 700px) {
     .flex {
         flex-flow: row nowrap;

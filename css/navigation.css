@@ -7,7 +7,7 @@
         opacity: 1;
     }
 }
-#header {
+#header, #footer {
     background-color: #222629;
 }
     #header a {
@@ -92,7 +92,12 @@
         margin-left: auto;
         margin-right: auto;
     }
-
+#footer p {
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+    font: 200 14px 'Raleway', sans-serif;
+}
 @media all and (min-width: 700px) {
     .top-navigation {
         justify-content: flex-start;

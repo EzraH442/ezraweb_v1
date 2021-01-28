@@ -41,13 +41,13 @@ body {
     #home-hs #hs-title {
         text-align: center;
         margin: 40px 0 10px;
-        font-size: 24px;
+        font: 400 24px 'Raleway', sans-serif;
     }
 
     #home-hs #hs-description {
         text-align: center;
-        padding: 20px;
-        font-size: 16px;
+        margin: 20px;
+        font: 400 16px 'Raleway', sans-serif;
         width: 90%;
     }
 
@@ -67,10 +67,11 @@ body {
     #home-hs .columns {
         margin: 10px 20px 50px;
     }
-    
+
 .post .post-title {
     margin: 0 20px 20px;
     font-size: 28px;
+    font-weight: 400;
 }
 .post .post-text {
     line-height: 24px;
