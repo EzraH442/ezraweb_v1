@@ -25,18 +25,69 @@
     .columns a:hover {
         background-color: #61892F;
     }
-    .columns .text {
-        width: 90vw
-    }
     .columns .last {
         order: 3;
     }
 body {
     background-color: #222629;
 }
+
+#home-hs {
+    background-color: #6B6E70;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+    #home-hs #hs-title {
+        text-align: center;
+        margin: 40px 0 10px;
+        font-size: 24px;
+    }
+
+    #home-hs #hs-description {
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #home-hs hr {
+        margin: 0;
+        align-self: stretch;
+        min-height: 1px;
+        background-color: black;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #home-hs #posts {
+        margin: 20px 40px 10px;
+        align-self: flex-start;
+    }
+    #home-hs .columns {
+        margin: 10px 20px 50px;
+    }
+    
+.post .post-title {
+    margin: 0 20px 20px;
+    font-size: 28px;
+}
+.post .post-text {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.post .post-date {
+    margin: 24px 0 10px;
+}
 @media all and (min-width: 700px) {
     .container-toi .text {
         font-size: 2.6vw
+    }
+    #home-hs #hs-title {
+        font-size: calc(24px + 1vw);
+    }
+    #home-hs #hs-description {
+        font-size: calc(18px + 0.25vw);
     }
 }
 @media all and (min-width: 960px) {
