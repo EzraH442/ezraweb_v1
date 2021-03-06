@@ -1,5 +1,5 @@
-let latestPostMain = "journals/2021-2-11.html";
-let latestPostJournal = "2021-2-11.html";
+let latestPostMain = "journals/2021-3-6.html";
+let latestPostJournal = "2021-3-6.html";
 
 let elements = document.getElementsByClassName("_latest-post-main")
 let otherElements = document.getElementsByClassName("_latest-post-journal")
