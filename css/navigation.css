@@ -53,6 +53,7 @@
 #toggle {
     order: 1;
     font-size: 40px;
+    color: white;
 }
 .toggle-submenu {
     font-size: 20px;

@@ -10,7 +10,6 @@ function getCaptchaToken() {
 
 async function onFormSubmit(captcha, form) {
     let token = await getCaptchaToken();
-    console.log(captcha);
     captcha.value = token;
     form.submit();
 }
